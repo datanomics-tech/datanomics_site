@@ -177,12 +177,14 @@
 
   /* ---------- scroll progress & back to top ---------- */
   const prog = $("#progress"),
-    top = $("#toTop");
+    top = $("#toTop"),
+    hdr = $("header.site");
   addEventListener(
     "scroll",
     () => {
       const h = document.documentElement,
         max = h.scrollHeight - h.clientHeight;
+      hdr && hdr.classList.toggle("scrolled", h.scrollTop > 12);
       if (prog) prog.style.width = (max > 0 ? (h.scrollTop / max) * 100 : 0) + "%";
       top && top.classList.toggle("show", h.scrollTop > 600);
     },
