@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # DATANOMICS TECHNOLOGIES Ltd: Website
 
 The corporate website for **DATANOMICS TECHNOLOGIES Ltd**, Norrsken Kigali Building, Kigali, Rwanda.
@@ -69,3 +70,7 @@ Every change you push to `main` goes live automatically.
 - Replace the sample testimonials and the five placeholder staff profiles (both are labelled on the site).
 - Review the draft message from the Managing Director on the home page.
 - Connect the contact form to email (see above).
+=======
+# datanomics_site
+This is the repository for Datanomics Website Development
+>>>>>>> b329690d0316a7302d8783ea3b103b0087a789f5
