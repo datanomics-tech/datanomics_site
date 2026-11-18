@@ -1,0 +1,32 @@
+<footer class="site">
+  <div class="wrap">
+    <div class="ftop">
+      <div>
+        <a class="brand" href="/"><svg viewBox="0 0 64 64" aria-hidden="true"><use href="#logo"/></svg><span><b>DATANOMICS</b><small>TECHNOLOGIES LTD</small></span></a>
+        <p class="ftag">From brand to infrastructure, one Kigali team you can actually call.</p>
+      </div>
+      <form id="news" class="fnews" novalidate data-endpoint="/api/subscribe">
+        <label for="news-email">Get our monthly insights on security, data and digital transformation</label>
+        <div class="row"><input id="news-email" type="email" placeholder="you@company.rw" autocomplete="email" required><button class="btn sm" type="submit">Subscribe</button></div>
+        <span class="msg" id="newsMsg" role="status"></span>
+      </form>
+    </div>
+    <div class="fgrid">
+      <div><h4>Company</h4><ul class="fl">
+        <li><a href="/about/">About</a></li><li><a href="/portfolio/">Portfolio</a></li><li><a href="/team/">Team</a></li><li><a href="/testimonials/">Testimonials</a></li><li><a href="/insights/">Insights</a></li><li><a href="/contact/">Contact</a></li>
+      </ul></div>
+      <div><h4>Verticals</h4><ul class="fv">{{footer_verticals}}</ul></div>
+      <div><h4>Get in touch</h4><ul class="fcontact">
+        <li><svg class="i"><use href="#i-pin"/></svg>{{set:address}}</li>
+        <li><svg class="i"><use href="#i-phone"/></svg>{{set:phone}}</li>
+        <li><svg class="i"><use href="#i-mail"/></svg><span style="word-break:break-all">{{set:email}}</span></li>
+        <li><svg class="i"><use href="#i-clock"/></svg>Mon–Fri {{set:hours_weekdays}} CAT</li>
+      </ul>
+      <div class="social" data-social></div></div>
+    </div>
+    <div class="fbar">
+      <span>© 2026 DATANOMICS TECHNOLOGIES Ltd. All Rights Reserved.</span>
+      <span>Company code 123249642</span>
+    </div>
+  </div>
+</footer>

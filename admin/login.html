@@ -1,0 +1,35 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex, nofollow">
+<title>Sign in · Datanomics Admin</title>
+<link rel="icon" type="image/svg+xml" href="/assets/img/favicon.svg">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Sora:wght@600;700&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap">
+<link rel="stylesheet" href="/admin/static/admin.css">
+</head>
+<body class="login-body">
+  <main class="login-card">
+    <a class="login-brand" href="/" aria-label="Back to website">
+      <img src="/assets/img/logo.svg" alt="" width="44" height="44">
+      <span><b>DATANOMICS</b><small>ADMIN PANEL</small></span>
+    </a>
+    <h1>Sign in</h1>
+    <p class="sub">Manage the website content, insights and enquiries.</p>
+    <form id="login" novalidate>
+      <label for="email">Email</label>
+      <input id="email" type="email" autocomplete="username" required autofocus>
+      <label for="password">Password</label>
+      <div class="pw">
+        <input id="password" type="password" autocomplete="current-password" required>
+        <button type="button" id="togglePw" aria-label="Show password">Show</button>
+      </div>
+      <p class="form-error" id="err" role="alert" hidden></p>
+      <button class="btn primary block" type="submit">Sign in</button>
+    </form>
+    <p class="foot">Forgot your password? Ask another admin to reset it, or run <code>npm run admin:create</code> on the server.</p>
+  </main>
+  <script src="/admin/static/login.js" defer></script>
+</body>
+</html>

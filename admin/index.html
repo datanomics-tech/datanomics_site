@@ -1,0 +1,32 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex, nofollow">
+<title>Datanomics Admin</title>
+<link rel="icon" type="image/svg+xml" href="/assets/img/favicon.svg">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Sora:wght@600;700&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap">
+<link rel="stylesheet" href="/admin/static/admin.css">
+</head>
+<body>
+<div class="shell">
+  <aside class="side" id="side">
+    <a class="side-brand" href="#dashboard"><img src="/assets/img/logo.svg" alt="" width="34" height="34"><span><b>DATANOMICS</b><small>ADMIN</small></span></a>
+    <nav id="nav" aria-label="Admin sections"></nav>
+    <a class="side-site" href="/" target="_blank" rel="noopener">View website ↗</a>
+  </aside>
+  <div class="main">
+    <header class="top">
+      <button class="icon-btn menu" id="menuBtn" aria-label="Open menu">☰</button>
+      <h1 id="title">Dashboard</h1>
+      <div class="top-user"><span id="who"></span><button class="btn ghost sm" id="logout">Sign out</button></div>
+    </header>
+    <section id="view" class="view" aria-live="polite"></section>
+  </div>
+</div>
+<div class="drawer-wrap" id="drawerWrap" hidden><div class="drawer-back" data-close-drawer></div><aside class="drawer" id="drawer" role="dialog" aria-modal="true" aria-labelledby="drawerTitle"></aside></div>
+<div class="toast" id="toast" role="status" aria-live="polite"></div>
+<script src="/admin/static/admin.js" defer></script>
+</body>
+</html>
