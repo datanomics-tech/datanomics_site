@@ -47,7 +47,7 @@ app.use(session({
   resave: false,
   saveUninitialized: false,
   rolling: true,
-  cookie: { httpOnly: true, sameSite: "lax", secure: config.prod && config.trustProxy, maxAge: 8 * 3600 * 1000 }
+  cookie: { httpOnly: true, sameSite: "lax", secure: config.trustProxy ? "auto" : false, maxAge: 8 * 3600 * 1000 }
 }));
 
 // Static files
